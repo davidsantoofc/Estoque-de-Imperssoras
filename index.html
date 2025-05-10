@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estoque de Impressoras</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Estoque de Impressoras</h1>
+        <nav>
+            <button onclick="loadPage('estoque')">Estoque</button>
+            <button onclick="loadPage('venda')">Venda</button>
+        </nav>
+    </header>
+    <main>
+        <div class="filtros">
+            <select id="tipoFiltro" onchange="filtrarImpressoras()">
+                <option value="">Todos os Tipos</option>
+                <option value="Laser">Laser</option>
+                <option value="Jato de Tinta">Jato de Tinta</option>
+                <option value="Térmica">Térmica</option>
+            </select>
+            <select id="funcionalidadeFiltro" onchange="filtrarImpressoras()">
+                <option value="">Todas as Funcionalidades</option>
+                <option value="impressão">Impressão</option>
+                <option value="cópia">Cópia</option>
+                <option value="digitalização">Digitalização</option>
+                <option value="duplex">Duplex</option>
+                <option value="ADF">ADF</option>
+            </select>
+            <input type="number" id="contadorFiltro" placeholder="Contador até..." onkeyup="filtrarImpressoras()">
+        </div>
+        <div id="listaImpressoras" class="lista"></div>
+    </main>
+    <div id="modal" class="modal hidden" onclick="fecharModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="fecharModal()">×</span>
+            <div id="modalDetalhes"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
