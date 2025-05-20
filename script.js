@@ -27,6 +27,14 @@ const impressoras = {
             imagem: "https://www.creativecopias.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/4/4/4481_ampliada2.jpg"
         },
         {
+            nome: "Samsung M4070",
+            tipo: "Laser",
+            contador: 42984,
+            conexao: "USB e rede",
+            funcionalidades: "impressão, duplex, cópia, digitalização e ADF",
+            imagem: "https://www.smimpressoras.com.br/wp-content/uploads/2019/11/SAMSUNG-4070-NOVA-600x600.jpg"
+        },
+        {
             nome: "HP P1102",
             tipo: "Laser",
             contador: 19116,
