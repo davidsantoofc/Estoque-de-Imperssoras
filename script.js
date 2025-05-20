@@ -29,7 +29,7 @@ const impressoras = {
         {
             nome: "Samsung M4070",
             tipo: "Laser",
-            contador: 42984,
+            contador: 136015,
             conexao: "USB e rede",
             funcionalidades: "impressão, duplex, cópia, digitalização e ADF",
             imagem: "https://www.smimpressoras.com.br/wp-content/uploads/2019/11/SAMSUNG-4070-NOVA-600x600.jpg"
